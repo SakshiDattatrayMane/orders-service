@@ -10,6 +10,6 @@ public class OrderController {
 
     @GetMapping("/orders/{id}/status")
     public Map<String, Object> status(@PathVariable long id) {
-        return Map.of("orderId", id, "status", "SHIPPED", "version", "1.0.0");
+        return Map.of("orderId", id, "status", "PACKED", "version", "1.0.0");
     }
 }
